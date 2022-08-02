@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page title</title>
+        <script>
+            function greeting(){
+                let name=prompt("Please input your name: ");
+                document.getElementById('demo').innerHTML = 'Hello Terapat';
+                window.alert('Hello Terapat');
+            }
+            function changeTored(){
+                document.getElementById('demo').style.color= 'red';
+                document.getElementById('demo').style.fontSize='30px';
+            }
+            function changeTodog(){
+                document.getElementById('animal').src='https://preview.redd.it/ufyu3vwkbuh71.jpg?auto=webp&s=6ccef55b07b8307f57a02fdbf358c792c4976723';
+                document.getElementById('animal').width="198";
+                document.getElementById('animal').height="324";
+            }
+            function changeTocat(){
+                document.getElementById('animal').src='https://img-9gag-fun.9cache.com/photo/aAe4WOZ_460s.jpg';
+                document.getElementById('animal').width="230";
+                document.getElementById('animal').height="298.5";
+            }
+        </script>
+
     </head>
     <body>
-        <img src="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb.jpg">
-        <img src="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb.jpg">
-        <h1>This is Heading</h1>
-        <p>This is Paragraph</p>
+        <h2>My First Javascript</h2>
+        <img id="animal" src="https://img-9gag-fun.9cache.com/photo/aAe4WOZ_460s.jpg" width="230" height="298.5">
+        <button type="button" onclick="greeting()">Click me to display Date and Time.</button>
+        <button type="button" onclick="changeTored()">Click me to color to red.</button>
+        
+        <button type="button" onclick="changeTodog()">Click me to change to dog.</button>
+        <button type="button" onclick="changeTocat()">Click me to change to cat.</button>
+
+<p id="demo"></p>
+ 
     </body>
 </html>
